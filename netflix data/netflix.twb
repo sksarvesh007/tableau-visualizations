@@ -1,0 +1,708 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20232.23.0909.1159                               -->
+<workbook original-version='18.1' source-build='2023.2.2 (20232.23.0909.1159)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='btc' inline='true' name='federated.0j8g2yd0f23f8n1g4v2qo0qxcjad' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='btc' name='textscan.0beimuw009khvz11hzjf51ymot62'>
+            <connection class='textscan' directory='C:/Users/SARVESH/Desktop/repos/BITCOIN-PRICE-PREDICTION-USING-DEEP-LEARNING' filename='btc.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0beimuw009khvz11hzjf51ymot62' name='btc.csv' table='[btc#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='datetime' name='datetime' ordinal='0' />
+            <column datatype='real' name='open' ordinal='1' />
+            <column datatype='real' name='high' ordinal='2' />
+            <column datatype='real' name='low' ordinal='3' />
+            <column datatype='real' name='close' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0beimuw009khvz11hzjf51ymot62' name='btc.csv' table='[btc#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='datetime' name='datetime' ordinal='0' />
+            <column datatype='real' name='open' ordinal='1' />
+            <column datatype='real' name='high' ordinal='2' />
+            <column datatype='real' name='low' ordinal='3' />
+            <column datatype='real' name='close' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[btc.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>datetime</remote-name>
+            <remote-type>135</remote-type>
+            <local-name>[datetime]</local-name>
+            <parent-name>[btc.csv]</parent-name>
+            <remote-alias>datetime</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[btc.csv_48DB0609009B43E2B4EFDB3237DB8AC4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>open</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[open]</local-name>
+            <parent-name>[btc.csv]</parent-name>
+            <remote-alias>open</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[btc.csv_48DB0609009B43E2B4EFDB3237DB8AC4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>high</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[high]</local-name>
+            <parent-name>[btc.csv]</parent-name>
+            <remote-alias>high</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[btc.csv_48DB0609009B43E2B4EFDB3237DB8AC4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>low</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[low]</local-name>
+            <parent-name>[btc.csv]</parent-name>
+            <remote-alias>low</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[btc.csv_48DB0609009B43E2B4EFDB3237DB8AC4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>close</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[close]</local-name>
+            <parent-name>[btc.csv]</parent-name>
+            <remote-alias>close</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[btc.csv_48DB0609009B43E2B4EFDB3237DB8AC4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='btc.csv' datatype='table' name='[__tableau_internal_object_id__].[btc.csv_48DB0609009B43E2B4EFDB3237DB8AC4]' role='measure' type='quantitative' />
+      <column caption='Close' datatype='real' name='[close]' role='measure' type='quantitative' />
+      <column caption='Datetime' datatype='datetime' name='[datetime]' role='dimension' type='ordinal' />
+      <column caption='High' datatype='real' name='[high]' role='measure' type='quantitative' />
+      <column caption='Low' datatype='real' name='[low]' role='measure' type='quantitative' />
+      <column caption='Open' datatype='real' name='[open]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='btc.csv' id='btc.csv_48DB0609009B43E2B4EFDB3237DB8AC4'>
+            <properties context=''>
+              <relation connection='textscan.0beimuw009khvz11hzjf51ymot62' name='btc.csv' table='[btc#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='datetime' name='datetime' ordinal='0' />
+                  <column datatype='real' name='open' ordinal='1' />
+                  <column datatype='real' name='high' ordinal='2' />
+                  <column datatype='real' name='low' ordinal='3' />
+                  <column datatype='real' name='close' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='netflix_titles' inline='true' name='federated.1hn7quq1qpxioc1dvjw3u0mux6im' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='netflix_titles' name='textscan.0n0kfrg1do2hby1fbhk5r1brw9xl'>
+            <connection class='textscan' directory='D:/New folder (2)/Downloads' filename='netflix_titles.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0n0kfrg1do2hby1fbhk5r1brw9xl' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='show_id' ordinal='0' />
+            <column datatype='string' name='type' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='director' ordinal='3' />
+            <column datatype='string' name='cast' ordinal='4' />
+            <column datatype='string' name='country' ordinal='5' />
+            <column datatype='date' date-parse-format='MMMM dd, yyyy' name='date_added' ordinal='6' />
+            <column datatype='integer' name='release_year' ordinal='7' />
+            <column datatype='string' name='rating' ordinal='8' />
+            <column datatype='string' name='duration' ordinal='9' />
+            <column datatype='string' name='listed_in' ordinal='10' />
+            <column datatype='string' name='description' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0n0kfrg1do2hby1fbhk5r1brw9xl' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='integer' name='show_id' ordinal='0' />
+            <column datatype='string' name='type' ordinal='1' />
+            <column datatype='string' name='title' ordinal='2' />
+            <column datatype='string' name='director' ordinal='3' />
+            <column datatype='string' name='cast' ordinal='4' />
+            <column datatype='string' name='country' ordinal='5' />
+            <column datatype='date' date-parse-format='MMMM dd, yyyy' name='date_added' ordinal='6' />
+            <column datatype='integer' name='release_year' ordinal='7' />
+            <column datatype='string' name='rating' ordinal='8' />
+            <column datatype='string' name='duration' ordinal='9' />
+            <column datatype='string' name='listed_in' ordinal='10' />
+            <column datatype='string' name='description' ordinal='11' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>show_id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[show_id]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>show_id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>title</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[title]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>title</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>director</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[director]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>director</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cast</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[cast]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>cast</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>country</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[country]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>country</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_added</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[date_added]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>date_added</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>release_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[release_year]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>release_year</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rating</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[rating]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>rating</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>duration</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[duration]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>duration</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>listed_in</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[listed_in]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>listed_in</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>description</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[description]</local-name>
+            <parent-name>[netflix_titles.csv]</parent-name>
+            <remote-alias>description</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='netflix_titles.csv' datatype='table' name='[__tableau_internal_object_id__].[netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809]' role='measure' type='quantitative' />
+      <column caption='Cast' datatype='string' name='[cast]' role='dimension' type='nominal' />
+      <column caption='Country' datatype='string' name='[country]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+      <column caption='Description' datatype='string' name='[description]' role='dimension' type='nominal' />
+      <column caption='Director' datatype='string' name='[director]' role='dimension' type='nominal' />
+      <column caption='Duration' datatype='string' name='[duration]' role='dimension' type='nominal' />
+      <column caption='Listed In' datatype='string' name='[listed_in]' role='dimension' type='nominal' />
+      <column caption='Rating' datatype='string' name='[rating]' role='dimension' type='nominal' />
+      <column caption='Release Year' datatype='integer' name='[release_year]' role='dimension' type='quantitative' />
+      <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+      <column caption='Title' datatype='string' name='[title]' role='dimension' type='nominal' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#d3293d'>
+              <bucket>&quot;Movie&quot;</bucket>
+            </map>
+            <map to='#f77b66'>
+              <bucket>&quot;TV Show&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='netflix_titles.csv' id='netflix_titles.csv_E066893B5EC0401DB4956C1C99D0A809'>
+            <properties context=''>
+              <relation connection='textscan.0n0kfrg1do2hby1fbhk5r1brw9xl' name='netflix_titles.csv' table='[netflix_titles#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='integer' name='show_id' ordinal='0' />
+                  <column datatype='string' name='type' ordinal='1' />
+                  <column datatype='string' name='title' ordinal='2' />
+                  <column datatype='string' name='director' ordinal='3' />
+                  <column datatype='string' name='cast' ordinal='4' />
+                  <column datatype='string' name='country' ordinal='5' />
+                  <column datatype='date' date-parse-format='MMMM dd, yyyy' name='date_added' ordinal='6' />
+                  <column datatype='integer' name='release_year' ordinal='7' />
+                  <column datatype='string' name='rating' ordinal='8' />
+                  <column datatype='string' name='duration' ordinal='9' />
+                  <column datatype='string' name='listed_in' ordinal='10' />
+                  <column datatype='string' name='description' ordinal='11' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='btc' name='federated.0j8g2yd0f23f8n1g4v2qo0qxcjad' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0j8g2yd0f23f8n1g4v2qo0qxcjad'>
+            <column-instance column='[high]' derivation='Avg' name='[avg:high:qk]' pivot='key' type='quantitative' />
+            <column caption='Datetime' datatype='datetime' name='[datetime]' role='dimension' type='ordinal' />
+            <column caption='High' datatype='real' name='[high]' role='measure' type='quantitative' />
+            <column-instance column='[datetime]' derivation='Minute' name='[mi:datetime:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0j8g2yd0f23f8n1g4v2qo0qxcjad].[mi:datetime:qk]' field-type='quantitative' max='151' min='-49' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0j8g2yd0f23f8n1g4v2qo0qxcjad].[avg:high:qk]' field-type='quantitative' max='20707980.687264688' min='-23027186.518974748' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.0j8g2yd0f23f8n1g4v2qo0qxcjad].[avg:high:qk]</rows>
+        <cols>[federated.0j8g2yd0f23f8n1g4v2qo0qxcjad].[mi:datetime:qk]</cols>
+      </table>
+      <simple-id uuid='{436B4EA2-A9D2-4A66-BA88-A68BEF4F80E7}' />
+    </worksheet>
+    <worksheet name='Sheet 2'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759'>total productions per year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='netflix_titles' name='federated.1hn7quq1qpxioc1dvjw3u0mux6im' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1hn7quq1qpxioc1dvjw3u0mux6im'>
+            <column-instance column='[show_id]' derivation='Count' name='[cnt:show_id:qk]' pivot='key' type='quantitative' />
+            <column caption='Date Added' datatype='date' name='[date_added]' role='dimension' type='ordinal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Show Id' datatype='integer' name='[show_id]' role='dimension' type='ordinal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column-instance column='[date_added]' derivation='Year' name='[yr:date_added:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[yr:date_added:ok]'>
+            <groupfilter from='2008' function='range' level='[yr:date_added:ok]' to='2020' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[yr:date_added:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[cnt:show_id:qk]' scope='rows' value='' />
+            <format attr='width' field='[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[cnt:show_id:qk]' value='64' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='font-family' data-class='total' scope='rows' value='Teko SemiBold' />
+            <format attr='font-family' data-class='subtotal' value='Tableau Semibold' />
+            <format attr='font-size' data-class='subtotal' value='11' />
+            <format attr='color' data-class='subtotal' value='#ff0000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-family' field='[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[cnt:show_id:qk]' value='Tableau Semibold' />
+            <format attr='color' field='[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[cnt:show_id:qk]' value='#ffffff' />
+            <format attr='font-family' field='[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[yr:date_added:ok]' value='Tableau Semibold' />
+            <format attr='color' field='[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[yr:date_added:ok]' value='#ffffff' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1b1b1b' />
+            <format attr='band-size' scope='rows' value='1' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[none:type:nk]' />
+              <text column='[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[none:type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='color' value='#ffffff' />
+                <format attr='font-family' value='Test Söhne Breit Halbfett' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[cnt:show_id:qk]</rows>
+        <cols>[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[yr:date_added:ok]</cols>
+      </table>
+      <simple-id uuid='{B910C35B-4AD4-43F5-9E93-6E44992C2FE8}' />
+    </worksheet>
+  </worksheets>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{FDF0073B-0C45-4A52-9FA9-BF8D6F67A5FA}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sheet 2'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1hn7quq1qpxioc1dvjw3u0mux6im].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{6C55DB64-9AA9-4E6B-BD1D-8DBAB29A511C}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 2' width='192'>
+      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
+      RU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
